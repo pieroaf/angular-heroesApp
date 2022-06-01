@@ -9,7 +9,7 @@ import { HeroesService } from '../../services/heroes.service';
   templateUrl: './heroe.component.html',
   styles: [
     `img {
-      width: 100%;
+      width: 70%;
       border-radius: 10px
     }`
   ]
