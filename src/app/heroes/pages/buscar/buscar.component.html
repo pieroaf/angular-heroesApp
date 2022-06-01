@@ -15,7 +15,7 @@
              [(ngModel)]="termino"
              [matAutocomplete]="auto"
              (input)="buscando()">
-      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="opcionSeleccionada($event)">
         <mat-option *ngFor="let heroe of heroes" [value]="heroe">
           {{ heroe.superhero }}
         </mat-option>
@@ -23,4 +23,8 @@
     </mat-form-field>
   </div>
 
+  <div>
+    <pre>{{heroeSeleccionado | json}}</pre>
+  </div>
 </div>
+
