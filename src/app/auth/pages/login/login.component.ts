@@ -21,4 +21,10 @@ export class LoginComponent {
       }
     })
   }
+
+  ingresarSinLogin(){
+    // solo para demostracion de guard
+    this.authService.logout();
+    this.router.navigate(['./heroes'])
+  }
 }
