@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'heroesApp';
   //aquí estuvo Piero
+  //desde la rama
 }
